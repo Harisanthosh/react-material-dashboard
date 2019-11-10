@@ -24,7 +24,7 @@ const Footer = props => {
         &copy;{' '}
         <Link
           component="a"
-          href="https://devias.io/"
+          href="http://bludle.com"
           target="_blank"
         >
           Waste No More
