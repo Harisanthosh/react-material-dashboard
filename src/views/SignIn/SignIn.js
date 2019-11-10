@@ -14,6 +14,7 @@ import {
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 import { Facebook as FacebookIcon, Google as GoogleIcon } from 'icons';
+import MicrosoftLogin from "react-microsoft-login";
 
 const schema = {
   email: {
@@ -175,6 +176,12 @@ const SignIn = props => {
     history.push('/');
   };
 
+  const authHandler = (error, authData) => {
+    if(authData) {
+      console.log(authData);
+    }
+  }
+
   const hasError = field =>
     formState.touched[field] && formState.errors[field] ? true : false;
 
@@ -249,7 +256,7 @@ const SignIn = props => {
                   spacing={2}
                 >
                   <Grid item>
-                    <Button
+                    {/* <Button
                       color="primary"
                       onClick={handleSignIn}
                       size="large"
@@ -257,7 +264,9 @@ const SignIn = props => {
                     >
                       <FacebookIcon className={classes.socialIcon} />
                       Login with Microsoft
-                    </Button>
+                    </Button> */}                    
+                    {/* <MicrosoftLogin clientId={"504a484a-0cd8-4c10-974e-f77683c0b691"} authCallback={authHandler} /> */}
+                    <MicrosoftLogin clientId={"be596bf7-427e-4559-ae54-1010909f5074"} redirectUri={"http://localhost:3000/"} authCallback={authHandler} />
                   </Grid>
                   <Grid item>
                     <Button

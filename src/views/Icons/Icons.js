@@ -19,7 +19,7 @@ const Icons = () => {
     <div className={classes.root}>
       <iframe
         className={classes.iframe}
-        src="http://35.208.2.28:8000/docs"
+        src="http://localhost:8000/docs"
         title="Oerlikon API Explorer"
       />
     </div>
