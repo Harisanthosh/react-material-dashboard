@@ -44,21 +44,38 @@ const UsersByDevice = props => {
   const classes = useStyles();
   const theme = useTheme();
 
+  // const data = {
+  //   datasets: [
+  //     {
+  //       data: [63, 15, 22],
+  //       backgroundColor: [
+  //         theme.palette.primary.main,
+  //         theme.palette.error.main,
+  //         theme.palette.warning.main
+  //       ],
+  //       borderWidth: 8,
+  //       borderColor: theme.palette.white,
+  //       hoverBorderColor: theme.palette.white
+  //     }
+  //   ],
+  //   labels: ['Desktop', 'Tablet', 'Mobile']
+  // };
+  const arr1 = Math.round(Math.random() * 80)
+  const arr2 = 100 - arr1
   const data = {
     datasets: [
       {
-        data: [63, 15, 22],
+        data: [arr1, arr2],
         backgroundColor: [
           theme.palette.primary.main,
-          theme.palette.error.main,
-          theme.palette.warning.main
+          theme.palette.error.main
         ],
         borderWidth: 8,
         borderColor: theme.palette.white,
         hoverBorderColor: theme.palette.white
       }
     ],
-    labels: ['Desktop', 'Tablet', 'Mobile']
+    labels: ['Coated', 'Uncoated']
   };
 
   const options = {
@@ -85,23 +102,23 @@ const UsersByDevice = props => {
 
   const devices = [
     {
-      title: 'Desktop',
-      value: '63',
+      title: 'Coated',
+      value: arr1,
       icon: <LaptopMacIcon />,
       color: theme.palette.primary.main
     },
     {
-      title: 'Tablet',
-      value: '15',
+      title: 'Uncoated',
+      value: arr2,
       icon: <TabletMacIcon />,
       color: theme.palette.error.main
-    },
-    {
-      title: 'Mobile',
-      value: '23',
-      icon: <PhoneIphoneIcon />,
-      color: theme.palette.warning.main
     }
+    // {
+    //   title: 'Mobile',
+    //   value: '23',
+    //   icon: <PhoneIphoneIcon />,
+    //   color: theme.palette.warning.main
+    // }
   ];
 
   return (
@@ -115,7 +132,7 @@ const UsersByDevice = props => {
             <RefreshIcon />
           </IconButton>
         }
-        title="Users By Device"
+        title="Percentage of Toolbits"
       />
       <Divider />
       <CardContent>

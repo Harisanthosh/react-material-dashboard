@@ -14,6 +14,9 @@ const useStyles = makeStyles(theme => ({
   content: {
     marginTop: theme.spacing(2)
   },
+  title: {
+    fontWeight: 700
+  },
   pagination: {
     marginTop: theme.spacing(3),
     display: 'flex',
@@ -28,36 +31,12 @@ const ProductList = () => {
   const [products] = useState(mockData);
 
   return (
-    <div className={classes.root}>
-      <ProductsToolbar />
-      <div className={classes.content}>
-        <Grid
-          container
-          spacing={3}
-        >
-          {products.map(product => (
-            <Grid
-              item
-              key={product.id}
-              lg={4}
-              md={6}
-              xs={12}
-            >
-              <ProductCard product={product} />
-            </Grid>
-          ))}
-        </Grid>
-      </div>
-      <div className={classes.pagination}>
-        <Typography variant="caption">1-6 of 20</Typography>
-        <IconButton>
-          <ChevronLeftIcon />
-        </IconButton>
-        <IconButton>
-          <ChevronRightIcon />
-        </IconButton>
-      </div>
-    </div>
+    <iframe
+        className={classes.iframe}
+        src="https://jsfiddle.net/Harisan07/f0zweL92/14/show"
+        width="100%" height="100%"
+        title="Processing waste along time"
+      />
   );
 };
 

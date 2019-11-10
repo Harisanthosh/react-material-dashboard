@@ -1,7 +1,7 @@
 import palette from 'theme/palette';
 
 export const data = {
-  labels: ['1 Aug', '2 Aug', '3 Aug', '4 Aug', '5 Aug', '6 Aug'],
+  labels: ['1 Nov', '2 Nov', '3 Nov', '4 Nov', '5 Nov', '6 Nov'],
   datasets: [
     {
       label: 'This year',
@@ -15,6 +15,22 @@ export const data = {
     }
   ]
 };
+
+// export const data = {
+//   labels: ['1 Nov', '2 Nov', '3 Nov', '4 Nov', '5 Nov', '6 Nov'],
+//   datasets: [
+//     {
+//       label: 'This year',
+//       backgroundColor: palette.primary.main,
+//       data: Array(7).fill().map(() => Math.round(Math.random() * 30))
+//     },
+//     {
+//       label: 'Last year',
+//       backgroundColor: palette.neutral,
+//       data: Array(7).fill().map(() => Math.round(Math.random() * 30))
+//     }
+//   ]
+// };
 
 export const options = {
   responsive: true,

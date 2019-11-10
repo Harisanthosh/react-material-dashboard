@@ -48,13 +48,13 @@ const Sidebar = props => {
       href: '/dashboard',
       icon: <DashboardIcon />
     },
+    // {
+    //   title: 'Users',
+    //   href: '/users',
+    //   icon: <PeopleIcon />
+    // },
     {
-      title: 'Users',
-      href: '/users',
-      icon: <PeopleIcon />
-    },
-    {
-      title: 'Products',
+      title: 'Waste Reduction Prediction',
       href: '/products',
       icon: <ShoppingBasketIcon />
     },
@@ -63,26 +63,26 @@ const Sidebar = props => {
       href: '/sign-in',
       icon: <LockOpenIcon />
     },
+    // {
+    //   title: 'Typography',
+    //   href: '/typography',
+    //   icon: <TextFieldsIcon />
+    // },
     {
-      title: 'Typography',
-      href: '/typography',
-      icon: <TextFieldsIcon />
-    },
-    {
-      title: 'Icons',
+      title: 'Waste Management API',
       href: '/icons',
       icon: <ImageIcon />
-    },
-    {
-      title: 'Account',
-      href: '/account',
-      icon: <AccountBoxIcon />
-    },
-    {
-      title: 'Settings',
-      href: '/settings',
-      icon: <SettingsIcon />
     }
+    // {
+    //   title: 'Account',
+    //   href: '/account',
+    //   icon: <AccountBoxIcon />
+    // },
+    // {
+    //   title: 'Settings',
+    //   href: '/settings',
+    //   icon: <SettingsIcon />
+    // }
   ];
 
   return (

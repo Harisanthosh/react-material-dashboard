@@ -19,8 +19,8 @@ const Icons = () => {
     <div className={classes.root}>
       <iframe
         className={classes.iframe}
-        src="https://material.io/tools/icons/?icon=accessibility&style=outline"
-        title="Material Design icons"
+        src="http://35.208.2.28:8000/docs"
+        title="Oerlikon API Explorer"
       />
     </div>
   );

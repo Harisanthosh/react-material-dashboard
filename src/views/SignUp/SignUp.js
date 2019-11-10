@@ -14,6 +14,9 @@ import {
   Typography
 } from '@material-ui/core';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+// import * as CanvasJSReact from '../../canvasjs.react';
+// var CanvasJS = CanvasJSReact.CanvasJS;
+// var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 const schema = {
   firstName: {
@@ -142,6 +145,13 @@ const useStyles = makeStyles(theme => ({
 
 const SignUp = props => {
   const { history } = props;
+
+  /*
+  
+
+  
+
+  */
 
   const classes = useStyles();
 

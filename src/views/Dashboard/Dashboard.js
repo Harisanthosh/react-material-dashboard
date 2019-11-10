@@ -82,7 +82,7 @@ const Dashboard = () => {
         >
           <UsersByDevice />
         </Grid>
-        <Grid
+        {/* <Grid
           item
           lg={4}
           md={6}
@@ -90,7 +90,7 @@ const Dashboard = () => {
           xs={12}
         >
           <LatestProducts />
-        </Grid>
+        </Grid> */}
         <Grid
           item
           lg={8}

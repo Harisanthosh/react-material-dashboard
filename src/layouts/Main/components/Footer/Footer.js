@@ -27,13 +27,12 @@ const Footer = props => {
           href="https://devias.io/"
           target="_blank"
         >
-          Devias IO
+          Waste No More
         </Link>
         . 2019
       </Typography>
       <Typography variant="caption">
-        Created with love for the environment. By designers and developers who
-        love to work together in offices!
+        Created for Oerlikon Hackathon 19 - Waste Management!
       </Typography>
     </div>
   );
